@@ -12,7 +12,7 @@ app.post('/weatherincity', (req, res) =>
 {
 		  console.log(req.body);
 		  
-		  var city = req.body.nlp.entities.ent_measure[0].raw;
+		  var city = req.body.nlp.entities.location[0].raw;
 		 
 		  var distext = '';
 		  
